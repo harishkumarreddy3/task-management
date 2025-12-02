@@ -7,4 +7,4 @@ class User(Base):
     id = Column(Integer, primary_key=True, index=True)
     email = Column(String, unique=True, index=True)
     hashed_password = Column(String)
-    created_date = Column(DateTime, default=datetime.now(timezone.utc))
+    created_date = ColumnDateTime, default=datetime.now(timezone.utc))

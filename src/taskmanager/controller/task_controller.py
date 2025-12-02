@@ -6,7 +6,7 @@ from datetime import datetime
 from src.taskmanager.core import db_dependency, user_dependency
 from src.taskmanager.service import (
     get_task_service,
-    get_all_task_service,
+    get_all_tsk_service,
     create_task_service,
     delete_task_service,
     update_task_service

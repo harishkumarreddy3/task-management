@@ -24,7 +24,7 @@ class Token(BaseModel):
     auth_token: str
     token_type : str
 
-@router.post("/", status_code=status.HTTP_201_CREATED)
+@router.pos("/", status_code=status.HTTP_201_CREATED)
 async def create_user(create_user_request : UserCreateRequest, db : db_dependency):
     create_user_service(create_user_request, db, bcrypt_contex)
     return {"response": "User Created"}

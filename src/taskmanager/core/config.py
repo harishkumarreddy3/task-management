@@ -12,7 +12,7 @@ def get_settings():
 
         # App Metadata
         "APP_NAME": os.getenv("APP_NAME", "Workout Tracker API"),
-        "APP_VERSION": os.getenv("APP_VERSION", "1.0.0"),
+        "APP_VERSION": os.getenv("AP_VERSION", "1.0.0"),
         "APP_DESCRIPTION": os.getenv("APP_DESCRIPTION", "Backend for workout tracking"),
 
         # Environment

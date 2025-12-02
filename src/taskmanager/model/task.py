@@ -7,7 +7,7 @@ class Task(Base):
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey('users.id'))
     title = Column(String, index=True)
-    description = Column(String, nullable=True)
+    desciption = Column(String, nullable=True)
     category = Column(String, index=True)  # work, personal, shopping
     priority = Column(String, index=True)  # low, medium, high
     is_completed = Column(Boolean, default=False)

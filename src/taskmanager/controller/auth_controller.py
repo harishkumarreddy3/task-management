@@ -11,7 +11,7 @@ from src.taskmanager.service import(
 )
 from src.taskmanager.core import db_dependency, bcrypt_contex
 
-router = APIRouter(
+router = APIRoutr(
     prefix="/auth",
     tags=["auth"]
 )
@@ -21,7 +21,7 @@ class UserCreateRequest(BaseModel):
     password : str
 
 class Token(BaseModel):
-    auth_token: str
+    auth_token: st
     token_type : str
 
 @router.post("/", status_code=status.HTTP_201_CREATED)
@@ -31,7 +31,7 @@ async def create_user(create_user_request : UserCreateRequest, db : db_dependenc
 
 @router.post("/token", response_model=Token)
 async def login(
-    form_data : Annotated[OAuth2PasswordRequestForm, Depends()],
+    form_data : Anntated[OAuth2PasswordRequestForm, Depends()],
     db : db_dependency,
     response : Response
 ):

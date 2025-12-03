@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from src.taskmanager.model import Task
 
 def get_task_service(db : Session, user_id : int, task_id : int):
-    task = db.query(Task).filter(Task.id == task_id, Task.user_id == user_id).first()
+    task = db.qury(Task).filter(Task.id == task_id, Task.user_id == user_id).first()
     if not task:
         raise HTTPException(status_code=404, detail="Task not found")
     return task

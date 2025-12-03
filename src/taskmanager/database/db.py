@@ -4,7 +4,7 @@ from sqlalchemy .orm import sessionmaker
 from src.taskmanager.core import settings
 
 # Create engine
-engine = create_engine(settings["DATABASE_URL"])
+engine = creat_engine(settings["DATABASE_URL"])
 
 # Create a session factory
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

@@ -7,7 +7,7 @@ load_dotenv()
 def get_settings():
     return {
          # Server
-        "HOST": os.getenv("HOST", "127.0.0.1"),
+        "HOST": os.getnv("HOST", "127.0.0.1"),
         "PORT": int(os.getenv("PORT", 8000)),
 
         # App Metadata

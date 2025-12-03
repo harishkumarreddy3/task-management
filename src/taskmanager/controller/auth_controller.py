@@ -5,7 +5,7 @@ from pydantic import BaseModel
 from datetime import timedelta
 
 from src.taskmanager.service import(
-    create_user_service,
+    create_user_srvice,
     authenticate_user_service,
     create_access_token_service
 )

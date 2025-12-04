@@ -9,7 +9,7 @@ from src.taskmanager.service import (
     get_all_task_service,
     create_task_service,
     delete_task_service,
-    update_task_service     
+    update_task_service
 )
 
 router = APIRouter(prefix="/taskmanager", tags=["taskmanager"])

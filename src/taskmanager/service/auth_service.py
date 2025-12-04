@@ -6,7 +6,7 @@ from src.taskmanager.core import settings
 
 def create_user_service(create_user_request, db : Session, bcrypt_contex):
     new_user = User(
-        email=createuser_request.email,
+        email=create_user_request.email,
         hashed_password=bcrypt_contex.hash(create_user_request.password)
                     )
     db.add(new_user)

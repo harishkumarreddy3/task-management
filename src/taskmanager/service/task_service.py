@@ -10,7 +10,7 @@ def get_task_service(db : Session, user_id : int, task_id : int):
 
 
 def get_all_task_service(db:Session, user_id : int):
-    return db.qury(Task).filter(Task.user_id == user_id).all()
+    return db.query(Task).filter(Task.user_id == user_id).all()
 
 
 def create_task_service(db : Session, user_id : int, task):
